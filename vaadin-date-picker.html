@@ -14,6 +14,7 @@ This program is available under Apache License Version 2.0, available at https:/
 <link rel="import" href="vaadin-date-picker-helper.html">
 <link rel="import" href="../vaadin-text-field/vaadin-text-field.html">
 <link rel="import" href="vaadin-date-picker-styles.html">
+<link rel="import" href="../vaadin-development-mode-detector/vaadin-development-mode-detector.html">
 
 <dom-module id="vaadin-date-picker">
   <template>
@@ -280,6 +281,7 @@ This program is available under Apache License Version 2.0, available at https:/
        * @namespace Vaadin
        */
       window.Vaadin = window.Vaadin || {};
+      Vaadin.importIfDevelopmentMode("vaadin-usage-statistics/vaadin-usage-statistics.html");
       Vaadin.DatePickerElement = DatePickerElement;
     }
   </script>
