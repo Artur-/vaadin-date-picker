@@ -281,8 +281,8 @@ This program is available under Apache License Version 2.0, available at https:/
        * @namespace Vaadin
        */
       window.Vaadin = window.Vaadin || {};
-      Vaadin.importIfDevelopmentMode("vaadin-usage-statistics/vaadin-usage-statistics.html");
       Vaadin.DatePickerElement = DatePickerElement;
+      Vaadin.runIfDevelopmentMode("vaadin-usage-statistics");
     }
   </script>
 </dom-module>
